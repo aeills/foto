@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background: linear-gradient(to bottom, #001f3f, #003366);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+}
+
+.title{
+    color:white;
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+.camera-box{
+    width:500px;
+    height:300px;
+
+    background:white;
+    border-radius:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:white;
+    color:#001f3f;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-size:20px;
+    font-weight:bold;
+}

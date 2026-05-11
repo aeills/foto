@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Amphi's Photobooth</title>
+
+    <link rel="stylesheet" href="result.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Amphi's Photobooth</h1>
+
+    <div class="result">
+        Result Page
+    </div>
+
+    <div class="photo-strip">
+
+        <img id="finalPhoto">
+
+    </div>
+
+    <div id="barcode-section" style="display:none;">
+
+        <h3>Scan Barcode to Download</h3>
+
+        <img src="barcode.png" class="barcode-img">
+
+    </div>
+
+    <div class="buttons">
+
+        <button onclick="downloadPhoto()">
+            Download
+        </button>
+
+        <a href="index.html">
+            <button>Finish</button>
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+
+const savedPhoto = localStorage.getItem("photo");
+
+document.getElementById("finalPhoto").src = savedPhoto;
+
+function downloadPhoto(){
+
+    const link = document.createElement("a");
+
+    link.href = savedPhoto;
+
+    link.download = "amphis-photobooth.png";
+
+    link.click();
+}
+
+</script>
+
+</body>
+</html>

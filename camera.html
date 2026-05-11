@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Amphi's Photobooth</title>
+
+  <link rel="stylesheet" href="camera.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+
+    <h2>Pilih Frame</h2>
+
+    <img src="frame1.png" class="frame-option" onclick="selectFrame(this)">
+    <img src="frame2.png" class="frame-option" onclick="selectFrame(this)">
+    <img src="frame3.png" class="frame-option" onclick="selectFrame(this)">
+
+  </div>
+
+  <div class="main">
+
+    <h1 class="title">📸 Amphi's Photobooth</h1>
+
+    <div class="camera-box">
+
+      <video id="video" autoplay></video>
+
+      <img id="frameOverlay" class="frame-overlay">
+
+      <div id="countdown">3</div>
+
+    </div>
+
+    <div class="buttons">
+
+      <button onclick="takePhoto()">TAKE PHOTO</button>
+
+      <button onclick="retake()">RETAKE</button>
+
+      <a href="result.html" class="next-btn">
+        Selanjutnya
+      </a>
+
+    </div>
+
+    <div id="result"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
